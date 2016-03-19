@@ -1,0 +1,16 @@
+{
+  "name": "gear-size-calculator-ui",
+  "version": "1.0.0",
+  "description": "ui events for gear size rendering",
+  "main": "index.js",
+  "scripts": {
+    "preversion": "npm test",
+    "prepublish": "coffee -o lib/ -c src/calculator.coffee",
+    "patch-release": "npm version patch && npm publish && git push --follow-tags",
+    "minor-release": "npm version minor && npm publish && git push --follow-tags",
+    "major-release": "npm version major && npm publish && git push --follow-tags",
+    "test": "test"
+  },
+  "author": "steve.o.cassels@gmail.com",
+  "license": "MIT"
+}
