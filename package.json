@@ -1,16 +1,31 @@
 {
   "name": "gear-size-calculator-ui",
   "version": "1.0.0",
+  "author": "steve.o.cassels@gmail.com",
   "description": "ui events for gear size rendering",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "bundle": "browserify lib/index.js > lib/calculator-ui-bundle.js",
+    "prebundle": "npm run compile-coffee",
+    "compile-coffee": "coffee -o lib/ -c src/",
     "preversion": "npm test",
-    "prepublish": "coffee -o lib/ -c src/calculator.coffee",
+    "prepublish": "npm run compile-coffee",
     "patch-release": "npm version patch && npm publish && git push --follow-tags",
     "minor-release": "npm version minor && npm publish && git push --follow-tags",
     "major-release": "npm version major && npm publish && git push --follow-tags",
     "test": "test"
   },
-  "author": "steve.o.cassels@gmail.com",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Steve-O-Cassels/gear-size-calculator-ui.git"
+  },
+  "keywords": [
+    "bike",
+    "gear-size-events",
+    "gear-ratio"
+  ],
+  "dependencies": {
+    "gear-size-calculator": "^1.0.1"
+  }
 }

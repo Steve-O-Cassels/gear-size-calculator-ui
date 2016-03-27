@@ -13,7 +13,9 @@
 * http://www.whycycle.co.uk/bike-gear-calculator/index.php
 * http://bikecalculator.com/index.html
 
+## A lightweight EventEmitter - https://www.npmjs.com/package/wolfy87-eventemitter
 
+http://code.tutsplus.com/tutorials/using-nodes-event-module--net-35941
 
 ## Best practices
 * [Categorize event names using an object (1)](1)
