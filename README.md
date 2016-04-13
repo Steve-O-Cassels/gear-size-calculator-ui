@@ -6,16 +6,19 @@ Create gear size UI events for bike ratio comparison.
 ## Test
 * `$ npm test`
 
-## Development
-
-**Dependencies**
+## Getting up and running
 1. `$ npm install browserify -g`
 2. `$ npm install beefy -g`
 3. Compile CoffeeScript and bundle:
   * `$ npm run bundle`
 4. Watch:
-  * `$ beefy index.js:\lib\calculator-events-bundle.js --live`
+* `$ beefy index.js:\lib\calculator-ui-bundle.js --live`
 
-# TODO
+## Global NPM Dependencies
+* [Browserify](https://www.npmjs.com/package/browserify)
+* [Beefy](https://www.npmjs.com/package/beefy)
+* [CoffeeScript](https://www.npmjs.com/package/coffee-script)
 
-TESTS USING JASMINE https://coffeescript-cookbook.github.io/chapters/testing/testing_with_jasmine
+## Related Links
+* NPM Blog : [Using jQuery plugins with npm](http://blog.npmjs.org/post/112064849860/using-jquery-plugins-with-npm) also covers using Browserify to achieve this.
+* CoffeeScript cookbook: [Testing with Jasmine](https://coffeescript-cookbook.github.io/chapters/testing/testing_with_jasmine)
