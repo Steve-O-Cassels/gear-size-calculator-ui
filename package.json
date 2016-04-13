@@ -26,6 +26,7 @@
     "gear-ratio"
   ],
   "dependencies": {
-    "gear-size-calculator": "^1.0.1"
+    "gear-size-calculator": "^1.0.1",
+    "jquery": "^2.2.3"
   }
 }
